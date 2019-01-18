@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|EB+Garamond|Oswald:300,400');
+
+* {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    border-top: 1px solid #e7e7e7;
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+.logo-mobile {
+    display: none;
+}
+
+.home-link {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.header-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #fafaf9;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header img {
+    width: 350px;
+}
+
+
+.header nav a {
+    padding-right: 20px;
+  }
+
+
+.header nav a {
+    padding-right: 20px;
+  }
+
+.header nav a:link {
+    color: #353535;
+    text-decoration: none;
+}
+  
+.header nav a:visited {
+    color: #353535;
+    text-decoration: none;
+}
+  
+.header nav a:hover {
+    color: #dfdfde;
+    text-decoration: none;
+}
+
+/******************************************
+/* SLIDESHOW
+/*******************************************/
+
+aside {
+    background-color: #fafaf9;
+}
+
+.images-wrapper {
+    width: 100%;
+}
+  
+.slider-img {
+    width: 100%;
+    display: none;
+    margin: auto;
+    border-radius: .3em;
+  }
+
+aside ul {
+      margin-top: -90px;
+      list-style-type:none;
+      text-align:center;
+  }
+
+  
+.bullets {
+    display:inline-block;
+    text-align:center;
+    vertical-align:top;
+    cursor:pointer;
+  }
+  
+.outer-circle {
+    width:1em;
+    height:1em;
+    background-color: #ffffff;
+    border-radius:50%;
+    position:relative;
+    margin:3em .5em;
+    text-align:center;
+}
+
+ul span {
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    margin:auto;
+    transform:translateY(-50%);
+    display:block;
+    width:.5em;
+    height:.5em;
+    background-color:#886472;
+    border-radius:50%;
+    opacity:0;
+    transition:all .5s;
+}
+  
+.bullets.selected span {
+    opacity : .7;
+}
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+main {
+    background-color: #fafaf9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#main-flexbox {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.h2-mobile {
+    display: none;
+}
+
+.left {
+    padding-right: 40px;
+}
+
+.left img {
+    width: 350px;
+}
+
+.right h2 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+    color: #494848;
+}
+  
+.right p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: EB Garamond, serif;
+    color: #494848;
+  }
+
+  .right a {
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .right a:link {
+    color: #a57a8b;
+    text-decoration: none;
+  }
+  
+  .right a:visited {
+    color: #a57a8b;
+    text-decoration: none;
+  }
+  
+  .right a:hover {
+    color: #553944;
+    text-decoration: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+/******************************************
+/* FEATURED SECTION
+/*******************************************/
+
+section {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section h3 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+    color: #494848;
+    text-transform: uppercase;
+}
+
+section img {
+    width: 22%;
+}
+
+.featured1 {
+    padding-right: 40px;
+}
+
+.featured2 {
+    padding-right: 40px;
+}
+
+/******************************************
+/* REVIEWS
+/*******************************************/
+
+summary {
+    background-color: #fafaf9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+summary h3 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+    color: #494848;
+    text-transform: uppercase;
+}
+
+#reviews-flexbox {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.reviews-left {
+    padding-right: 100px;
+}
+
+.reviews-middle {
+    padding-right: 100px;
+}
+
+summary p {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    font-family: EB Garamond, serif;
+    color: #494848;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+footer {
+    background-color: #a57a8b;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.nav-footer {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.nav-footer img {
+    width: 50px;
+}
+
+.insta {
+    padding-left: 30px;
+}
+
+.pinterest {
+    padding-left: 30px;
+}
+
+.linkedin {
+    padding-left: 30px;
+}
+
+footer span {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: white;
+}
+
+/******************************************
+/* ABOUT PAGE
+/*******************************************/
+
+.about-image {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#about-flexbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fafaf9;
+}
+
+.about-left {
+    padding-right: 120px;
+    padding-left: 100px;
+}
+
+.about-left h4 {
+    font-weight: 300;
+    font-style: italic;
+    font-size:  35px;
+    font-family: Cormorant Garamond, serif;
+    color: #494848;
+}
+
+.about-right {
+    padding-right: 100px;
+}
+
+.about-right p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: EB Garamond, serif;
+    color: #494848;
+    padding-bottom: 20px;
+}
+
+/******************************************
+/* PORTFOLIO PAGE
+/*******************************************/
+
+.portfolio-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+.portfolio-column {
+    flex: 25%;
+    max-width: 34%;
+    padding: 0 4px;
+}
+
+.portfolio-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/******************************************
+/* PRICING PAGE
+/*******************************************/
+
+.pricing-image {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#pricing-flexbox {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.pricing {
+    flex: 0 0 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pricing h2 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #BD9EAA;
+    text-transform: uppercase;
+}
+  
+.pricing p {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    font-family: EB Garamond, serif;
+    color: #494848;
+    background-color: #e2e1e0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+.pricing-top {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+.pricing-bottom {
+    padding-bottom: 20px;
+}
+
+/******************************************
+/* CONTACT PAGE
+/*******************************************/
+
+.contact-flexbox {
+display: flex;
+margin: auto 0;
+justify-content: center;
+}
+
+.contact-image {
+    padding-right: 60px;
+}
+
+.contact-flexbox img {
+    width: 400px;
+    height: 600px;
+}
+
+fieldset {
+    border: 0px;
+    width: 300px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+    color: #494848;
+    text-transform: uppercase;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: EB Garamond, serif;
+    color: #494848;
+}
+
+input, textarea, select {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: EB Garamond, serif;
+    color: #494848;
+    width: 400px;
+    background: transparent;
+    border: 1px solid #c1c1c1;
+}
+
+.submit-btn {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    color: #494848;
+    background-color: #BD9EAA;
+    color: white;
+    border: 0px;
+    padding: 5px;
+}
+
+/******************************************
+/* FEATURED FAMILY PAGE
+/*******************************************/
+
+.featured-family {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.featured-family h2 {
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+    color: #494848;
+    text-transform: uppercase;
+}
+
+.featured-family p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: EB Garamond, serif;
+    color: #494848;
+}
+
+.featured-image {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+/* overwriting CSS for new layout goes here */
+
+@media screen and (max-width: 900px){
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .home-link {
+        display: inline;
+    }
+
+    .header img {
+        width: 260px;
+    }
+
+    #main-flexbox {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .h2-mobile {
+        display: inline;
+    }
+
+    .h2-desktop {
+        display: none;
+    }
+
+    .h2-mobile {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: Oswald, sans-serif;
+        letter-spacing: 2px;
+        color: #494848;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .left {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .left img {
+        width: 76%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+
+    .right p {
+        font-size: 17px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: EB Garamond, serif;
+        color: #494848;
+    }
+
+    section {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    section h3 {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: Oswald, sans-serif;
+        letter-spacing: 2px;
+        color: #494848;
+        text-transform: uppercase;
+    }
+
+    section img {
+        width: 40%;
+    }
+
+    .featured1 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .featured2 {
+        padding-right: 20px;
+    }
+
+    .featured3 {
+        display: none;
+    }
+
+    #reviews-flexbox {
+        display: block;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .reviews-left {
+        padding-right: 0px;
+    }
+
+    .reviews-middle {
+        padding-top: 40px;
+        padding-right: 0px;
+    }
+
+    .reviews-right {
+        display: none;
+    }
+
+    summary p {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 16px;
+        font-family: EB Garamond, serif;
+        color: #494848;
+    }
+
+    footer nav img {
+        width: 40px;
+    }
+
+    .insta {
+        padding-left: 20px;
+    }
+
+    .pinterest {
+        padding-left: 20px;
+    }
+
+    .linkedin {
+        padding-left: 20px;
+    }
+
+    /* about page */
+
+    #about-flexbox {
+        display: block;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-right {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .about-right p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: EB Garamond, serif;
+        color: #494848;
+    }
+
+    /* pricing page */
+
+    #pricing-flexbox {
+        display: block;
+    }
+
+    .pricing {
+        padding-bottom: 20px;
+    }
+
+    /* contact page */
+
+    .contact-flexbox {
+        display: block;
+    }
+        
+    .contact-image {
+        display: none;
+    }
+
+    fieldset {
+        margin: 0 auto;
+    }
+
+    /* hamburger  */
+
+    .hamburger {
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        top: 40px;
+        right: 20px;
+        z-index: 5;
+    }
+    
+    .hamburger div {
+        position: relative;
+        width: 40px;
+        height: 5px;
+        background-color: rgb(61, 61, 61);
+        margin-top: 7px;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    /* Hamburger Animation */
+
+    #toggle:checked + .hamburger .top {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-top: 22.5px;
+    }
+    
+    #toggle:checked + .hamburger .meat {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        margin-top: -5px;
+    }
+    
+    #toggle:checked + .hamburger .bottom {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    
+    #toggle:checked + .hamburger + .nav {
+        top: 0;
+    }
+    
+    /* Menu Styling */
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(165, 122, 139, 0.9);
+        top: -100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .nav .nav-wrapper {
+        position: relative;
+        overflow-y: auto;
+        height: 100%;
+    }
+    
+    nav {
+        font: 700 20px 'Oswald', sans-serif;
+        height: 100vh;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    
+    .header nav a:visited {
+        color: white;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 15px;
+        color: white;
+        opacity: 0;
+        text-decoration: none;
+        font-size: 2.3em;
+        letter-spacing: 3px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+    nav a:hover {
+        color: rgb(61, 61, 61);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+    nav a:first-child {
+        margin-top: 0;
+    }
+    
+    /* Dropdown Animation */
+
+    #toggle:checked + .hamburger + .nav .nav-wrapper nav a {
+        opacity: 0.9;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
+}
