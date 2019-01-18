@@ -859,6 +859,10 @@ input, textarea, select {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
+
+    .header nav a:link {
+        color: white;
+    }
     
     nav a:hover {
         color: rgb(61, 61, 61);
